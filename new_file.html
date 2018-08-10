@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#box{
+				width: 100px;
+				height: 100px;
+				background: red;
+			}
+			
+			@media screen and (min-width: 600px) {
+				/*大于400px使用下边的样式*/
+				#box{
+					background: black;
+				}
+			}
+			@media screen and (min-width: 400px) and (max-width:600px) {
+				#box{
+					background: gold;
+				}
+			}
+			@media screen and (max-width: 400px) {
+				/*小雨400px使用下边的样式*/
+				#box{
+					background: blue;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+	</body>
+</html>
